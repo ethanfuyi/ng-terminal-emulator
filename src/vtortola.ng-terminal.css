@@ -7,13 +7,13 @@
     border-radius: 0;
 }
 .terminal {
-    background-color:#000;
+    background-color:white;
     height: 500px;
-    color: #F6F6FF;
+    color: blue;
     font-family: monospace;
     overflow-x: hidden;
     overflow-y:hidden;
-    font-size: 12px;
+    font-size: 13px;
     position:relative;
     padding:10px;
 }
@@ -21,7 +21,7 @@
 .terminal-target{
     vertical-align:bottom;
     opacity:0;
-    color:transparent;
+    color:#454545;
     height:1px;
     width:1px;
 }
@@ -41,6 +41,8 @@
 
 .terminal-cursor{
     visibility:visible;
+    color: white;
+    background-color:black;
 }
 .terminal-cursor-hidden{
     visibility:hidden;
@@ -53,25 +55,3 @@
     margin-left:10px;
 }
 
-.vintage-terminal {
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 83%, rgba(0,0,0,0.65) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(83%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.65)));
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 83%,rgba(0,0,0,0.65) 100%);
-    background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 83%,rgba(0,0,0,0.65) 100%);
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 83%,rgba(0,0,0,0.65) 100%);
-    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 83%,rgba(0,0,0,0.65) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
-    border-radius: 20px;
-    text-shadow: 0 0 6px rgba(255, 255, 255, .8);
-    box-shadow: 0 0 20px rgba(217, 215, 255, 0.85) inset, 2px 2px 16px #000;
-    transition: linear box-shadow .2s;
-    padding:0;
-}
-
-.vintage-terminal .terminal-viewport {
-    height: 94%;
-    margin: 15px 20px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding:0;
-}
